@@ -1,0 +1,13 @@
+{
+  "name": "e-commerceapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "ndemon."
+  },
+  "keywords": [],
+  "author": "KABORE Lionel Dimitri",
+  "license": "ISC",
+  "description": "We are creating an E-commerce api for new generation of leaders"
+}
