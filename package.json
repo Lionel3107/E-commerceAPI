@@ -4,10 +4,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "ndemon."
+    "start": "ndemon."
   },
   "keywords": [],
   "author": "KABORE Lionel Dimitri",
   "license": "ISC",
-  "description": "We are creating an E-commerce api for new generation of leaders"
+  "description": "We are creating an E-commerce api for new generation of leaders",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3"
+  }
 }
