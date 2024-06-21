@@ -1,6 +1,6 @@
 const express = require('express');
 const User = require('../models/user');
-const {verifyTokenAndAuthorization} = require('../routes/verifyToken');
+const {verifyTokenAndAuthorization, verifyToken} = require('../routes/verifyToken');
 const router = express.Router();
 
 // Update
@@ -48,7 +48,17 @@ router.delete('/find/:id', verifyTokenAndAuthorization, async (req,res) =>{
         res.status(500).json(error);
     }
 });
-
+// Get all users
+router.get("/", verifyToken, async (req,res, next) => {
+    try {
+        const users = await User.find();
+        users
+        ? res.status(200).json(users)
+        : res.status(404).json("Users not found");
+    } catch (error) {
+        res.status(500).json(error)
+    }
+});
 
 
 module.exports = router;

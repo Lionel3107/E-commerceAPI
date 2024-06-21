@@ -2,7 +2,7 @@ const express = require('express');
 const User = require("../models/user");
 const router = express.Router();
 const CryptoJS = require("crypto-js");
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
 
 // Register a new User
 
